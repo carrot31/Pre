@@ -80,7 +80,7 @@ const Location = () => {
           <MapMarker
             position={state.center}
             image={{
-              src: "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_red.png", // 마커이미지의 주소입니다
+              src: "https://ifh.cc/g/NcBFMY.png", // 마커이미지의 주소입니다
               size: {
                 width: 40,
                 height: 40,

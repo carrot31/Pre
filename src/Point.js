@@ -19,14 +19,11 @@ const Point = () => {
     const marker = new kakao.maps.Marker(), // 클릭한 위치를 표시할 마커입니다
       infowindow = new kakao.maps.InfoWindow({ zindex: 1 }); // 클릭한 위치에 대한 주소를 표시할 인포윈도우입니다
 
-    // 현재 지도 중심좌표로 주소를 검색해서 지도 좌측 상단에 표시합니다
-    searchAddrFromCoords(map.getCenter(), displayCenterInfo);
-
     // 지도를 클릭했을 때 클릭 위치 좌표에 대한 주소정보를 표시하도록 이벤트를 등록합니다
     kakao.maps.event.addListener(map, "click", function (mouseEvent) {
       searchDetailAddrFromCoords(mouseEvent.latLng, function (result, status) {
         if (status === kakao.maps.services.Status.OK) {
-          //   console.log(result);
+          // console.log(result);
           let detailAddr = !!result[0].road_address
             ? "<div>도로명주소 : " +
               result[0].road_address.address_name +

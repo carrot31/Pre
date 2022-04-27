@@ -4,6 +4,7 @@ import Location from "./Location";
 import { Route } from "react-router-dom";
 import StopWatch from "./StopWatch/StopWatch";
 import Point from "./Point";
+import Point2 from "./Point2";
 import Test from "./Test";
 import CountDown from "./Countdown";
 import MyLoca from "./MyLoca";
@@ -17,6 +18,7 @@ function App() {
       <Route path="/length" exact component={Length} />
       <Route path="/myloca" exact component={MyLoca} />
       <Route path="/point" exact component={Point} />
+      <Route path="/point2" exact component={Point2} />
       <Route path="/stop" exact component={StopWatch} />
       <Route path="/count" exact component={CountDown} />
       <Route path="/login" exact component={Login} />
